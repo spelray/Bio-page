@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="stylesheet" type="text/css" href="styles.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="icon" type="image/x-icon" href="./assets/favico/cloud.ico">
+<style type ="text/css" >
+  .footer{ 
+      position: fixed;     
+      text-align: center;    
+      bottom: 5px; 
+      width: 100%;
+  }  
+</style>
+</head>
+<body class="custom-cursor">
+  <!-- Terminal Window -->
+  <div id="terminal" class="custom-cursor">
+    <div id="terminal-header">
+      <div id="terminal-buttons">
+        <!-- Terminal Control Buttons -->
+        <div class="terminal-button" id="close-button"></div> <!-- Close button -->
+        <div class="terminal-button" id="minimize-button"></div> <!-- Minimize button -->
+        <div class="terminal-button" id="maximize-button"></div> <!-- Maximize button -->
+      </div>
+    </div>
+    <div id="terminal-content">
+      <p id="terminal-text"></p> <!-- Terminal text content -->
+    </div>
+  </div>
+  <!-- Background Elements -->
+  <div id="video-background">
+    <video autoplay muted loop id="myVideo"> <!-- Video background -->
+      <source src="./assets/back/0430(1).mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div id="audio-background">
+      <audio autoplay loop id="myAudio"> <!-- Audio background -->
+        <source src="./assets/music/narcotic.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div id="blurred-box">
+      
+      <img id="profile-picture" src="./assets/pfp/viperr.jpg" alt="Profile Picture">
+      <img id="avatar-frame" src="">
+      <p id="username" style="color: white; font-weight: bold; font-size: larger;">Spelray</p> <!-- Username -->
+      <!-- User Description -->
+      <div class="user-description">
+        <p id="user-description" style="color: white;">Junior Python/C++/C# Deleloper</p>
+      </div>
+      <div class="user-description">
+        <p id="user-description" style="color: white;">One Of The Viperrs</p>
+      </div>
+
+    <div id="blurred-box-2">
+      <img src="./assets/pfp/piska.jpg">
+      <div id="audio-controls">
+        <div class="audio-title" id="audio-title">Narcotic - 9mice</div>
+        <div class="audio-progress-row">
+          <span id="audio-current-time" class="audio-time">0:00</span>
+          <input type="range" id="audio-progress" value="0" min="0" max="100" step="0.1">
+          <span id="audio-total-time" class="audio-time">0:00</span>
+        </div>
+        <div id="audio-buttons">
+          <button id="audio-playpause" aria-label="Play/Pause">
+            <i id="audio-playpause-icon" class="fa-solid fa-play"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+        <!-- Links -->
+      <div class="links">
+        <a href="https://steamcommunity.com/profiles/76561199111950105" target="_blank">
+          <i class="fa-brands fa-steam white-icon"></i>
+        </a> 
+        <a href="https://github.com/Spelray" target="_blank">
+          <i class="fab fa-github"></i> 
+        </a> 
+
+      </div>
+    </div>
+
+
+  </div>
+  
+
+  <script src="./assets/js/script.js"></script> <!-- Script for functionality -->
+  <script src="./assets/js/title.js"></script> <!-- Script for title functionality -->
+  <script src="./assets/js/discord.js"></script> <!-- Script for discord functionality -->
+  <div class="footer" style="color: white; font-weight: bold; font-size: small ;">Made with love by Spelray</div>
+</body>
+</html>
